@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>草薙ファーマーズカフェHP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --page:#f1f1f1; --ink:#222222; --muted:#777777;
+  --accent:#e8553d; --header:#222222; --card:#fafafa; --toc:#eeeeee; --line:#222222; --soft-line:#e4e4e4;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1b1b1b; --page:#111111; --ink:#eeeeee; --muted:#a8a8a8;
+    --header:#000000; --card:#242424; --toc:#2a2a2a; --line:#eeeeee; --soft-line:#3a3a3a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1b1b1b; --page:#111111; --ink:#eeeeee; --muted:#a8a8a8;
+  --header:#000000; --card:#242424; --toc:#2a2a2a; --line:#eeeeee; --soft-line:#3a3a3a;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}
+.wrap{max-width:1300px;margin:0 auto;background:var(--bg);min-height:100vh}
+header{background:var(--header);color:#fff;display:flex;align-items:center;gap:56px;padding:12px 10px 12px 10px;height:80px}
+header .logo{width:67px;height:52px;background:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+header .logo svg{width:50px;height:46px}
+header .site{font-size:24px;font-weight:300;letter-spacing:.02em;margin:0}
+main{padding:0 36px 120px}
+.hero{max-width:1100px;margin:0 auto;padding:62px 0 0 110px}
+.eyebrow{color:var(--accent);font-size:12px;margin:0}
+h1{font-size:40px;font-weight:700;margin:6px 0 18px;line-height:1.3;letter-spacing:.04em}
+.lead{font-size:13px;margin:0}
+.rule{border:0;border-top:2px solid var(--line);margin:38px 0 52px}
+.cards{display:flex;flex-wrap:wrap;gap:98px;padding-left:0}
+.card{width:416px;max-width:100%;background:var(--card);border-left:2px solid var(--accent);padding:24px 18px 28px 22px}
+.card h2{font-size:22px;font-weight:700;margin:0 0 12px;padding:0 4px 14px;line-height:1.6;border-bottom:1px solid var(--soft-line)}
+.card p{margin:0;padding:0 0 0 2px;font-size:19px;color:var(--muted);line-height:1.3;font-weight:300}
+.toc{width:772px;max-width:100%;background:var(--toc);margin:62px 0 0 90px;padding:22px 34px 24px}
+.toc h2{font-size:28px;font-weight:300;margin:0 0 8px}
+.toc ol,.toc ul{list-style:none;margin:0;padding:0}
+.toc li{font-size:25px;font-weight:300;line-height:1.7}
+.toc a{color:inherit;text-decoration:none}
+.toc a:hover{text-decoration:underline}
+.toc .sep{display:inline-block;margin:0 .5em 0 .55em;border-left:1px solid currentColor;height:.95em;vertical-align:-.1em}
+.toc ul{padding-left:46px}
+.toc ul li{font-size:25px}
+.section{max-width:1100px;margin:90px 0 0 20px;padding-left:0}
+.section h2{font-size:40px;font-weight:700;margin:0;padding:0 0 12px 8px;border-bottom:1px solid var(--muted);letter-spacing:.03em}
+.section h2 .sep{display:inline-block;margin:0 .35em;border-left:2px solid currentColor;height:.85em;vertical-align:-.05em}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (max-width:900px){
+  header{gap:24px;height:auto}
+  header .site{font-size:18px}
+  main{padding:0 20px 80px}
+  .hero{padding:40px 0 0}
+  h1{font-size:30px}
+  .cards{gap:20px}
+  .toc{margin:40px 0 0}
+  .toc li,.toc ul li{font-size:20px}
+  .section{margin:60px 0 0}
+  .section h2{font-size:30px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 50 46" fill="none" stroke="#111" stroke-width="1.4"><circle cx="25" cy="16" r="9"/><path d="M12 42c2-10 8-14 13-14s11 4 13 14M18 12c3-6 11-6 14 0M20 17h3M28 17h3M22 22c2 2 4 2 6 0"/></svg>
+    </div>
+    <p class="site">草薙ファーマーズカフェHP</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Salesio high school</p>
+      <h1>草薙ファーマーズカフェ</h1>
+      <p class="lead">静岡サレジオ中学、高等学校の生徒が主体となって運営している会社です。</p>
+    </section>
+
+    <hr class="rule">
+
+    <div class="cards">
+      <article class="card">
+        <h2>生徒が主体となって<br>運営する会社</h2>
+        <p>養蜂、企画、営業、販売など様々な仕事をサレジオ生がメインで行っています</p>
+      </article>
+      <article class="card">
+        <h2>お金・自然・想いの<br>循環型社会を目指す</h2>
+        <p>私たちが一番大きく掲げている理念が「循環型社会」です</p>
+      </article>
+    </div>
+
+    <nav class="toc" aria-label="目次">
+      <h2>【目次】</h2>
+      <ol>
+        <li><a href="#circular">1<span class="sep"></span>循環型社会</a></li>
+        <li><a href="#business">2<span class="sep"></span>事業内容</a>
+          <ul>
+            <li><a href="#sixth">・6次産業化</a></li>
+            <li><a href="#awareness">・啓蒙活動</a></li>
+            <li><a href="#products">・商品説明</a></li>
+          </ul>
+        </li>
+        <li><a href="#departments">3<span class="sep"></span>ファーマーズカフェの部署</a></li>
+      </ol>
+    </nav>
+
+    <section class="section" id="circular">
+      <h2>1<span class="sep"></span>循環型社会</h2>
+    </section>
+  </main>
+</div>
+</body>
+</html>
